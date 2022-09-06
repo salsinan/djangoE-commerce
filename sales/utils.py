@@ -31,15 +31,11 @@ def get_chart(chart_type, data, **kwargs):
     plt.switch_backend('AGG')
     fig = plt.figure(figsize=(10,4))
     if chart_type == '#1':
-        print('bar chart')
-        # plt.bar(data['transaction_id'], data['price'])
         sns.barplot(x='transaction_id', y='price', data=data)
     elif chart_type == '#2':
-        print('pie chart')
         labels = kwargs.get('labels')
         plt.pie(data=data, x='price', labels=labels)
     elif chart_type == '#3':
-        print('line chart')
         plt.plot(data['transaction_id'], data['price'], marker='o')
     else:
         print('failed to identify chart')

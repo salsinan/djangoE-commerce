@@ -2,8 +2,19 @@
     display: none;
 }
 
+.avatar-sm {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+}
+
 .avatar-big {
     height: 200px;
     width: 150px;
     border-radius: 20%;
+}
+
+.logo-sm {
+    height: 20px;
+    width: auto;
 }

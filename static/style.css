@@ -1,3 +1,9 @@
 .not-visible {
     display: none;
 }
+
+.avatar-big {
+    height: 200px;
+    width: 150px;
+    border-radius: 20%;
+}

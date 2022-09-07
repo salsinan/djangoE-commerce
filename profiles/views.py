@@ -7,11 +7,9 @@ def my_profile_view(request):
     form = ProfileForm(request.POST or None, request.FILES or None, instance=profile)
     confirm = False
 
-    if form.is_valid:
-        # form.save()
+    if form.is_valid():
+        form.save()
         confirm = True
-    else:
-        profile = False
 
     context = {
         'profile': profile,

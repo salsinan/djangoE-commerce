@@ -39,6 +39,7 @@ if (img) {
                 },
                 error: function(error){
                     handleAlerts('danger', 'Oops..Something went wrong')
+                    reportForm.reset()
                 },
                 processData: false,
                 contentType: false
